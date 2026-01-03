@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import Register from "./Register";
+import Login from "./Login";
+import Leave from "./Leave";
+import TeamCalendar from "./TeamCalendar";
+import Holidays from "./Holidays";
+import History from "./History";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: "20px" }}>
+      <h1>Employee Leave Management</h1>
+
+      <h3>Register</h3>
+      <Register />
+
+      <hr />
+
+      <h3>Login</h3>
+      <Login />
+
+      <hr />
+
+      <h3>Apply Leave</h3>
+      <Leave />
+
+      <hr />
+
+      <h3>Team Calendar</h3>
+      <TeamCalendar />
+
+      <hr />
+
+      <h3>Public Holidays</h3>
+      <Holidays />
+
+      <hr />
+
+      <h3>Leave History</h3>
+      <History />
     </div>
   );
 }
